@@ -844,11 +844,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Kurs 2\\.NET\\Kursa_NET\\Kursa_NET\\Kursa_NET.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Abiturient\\Kursa_NET\\Kursa_NET.csproj",
       "projectName": "Kursa_NET",
-      "projectPath": "E:\\Kurs 2\\.NET\\Kursa_NET\\Kursa_NET\\Kursa_NET.csproj",
+      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Abiturient\\Kursa_NET\\Kursa_NET.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "E:\\Kurs 2\\.NET\\Kursa_NET\\Kursa_NET\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Abiturient\\Kursa_NET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

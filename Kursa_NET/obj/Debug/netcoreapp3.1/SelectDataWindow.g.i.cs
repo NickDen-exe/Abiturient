@@ -69,7 +69,7 @@ namespace Abiturient {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Kursa_NET;component/selectdatawindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Kursa_NET;V1.0.0.0;component/selectdatawindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\SelectDataWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

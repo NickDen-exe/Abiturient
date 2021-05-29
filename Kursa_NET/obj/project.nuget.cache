@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3lx9Zh30eJESl5kDcdynnycPBhlH4XFRMp03gsw/4IGXHOXJBzVZFbW2VcVTYu7ErU4N7/AH6VsOg3BM5RUQuA==",
+  "dgSpecHash": "ItwI3pVonhufDkj0dTTgmu9wxUJ1zRhuJNKcvD8qS6buRqsOHadkNGXL6LZzwPeqi3pohaupW49fyVTsIP9IQg==",
   "success": true,
-  "projectFilePath": "E:\\Kurs 2\\.NET\\Kursa_NET\\Kursa_NET\\Kursa_NET.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\Abiturient\\Kursa_NET\\Kursa_NET.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
