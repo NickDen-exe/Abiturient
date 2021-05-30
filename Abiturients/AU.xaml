@@ -1,0 +1,37 @@
+﻿<Window x:Class="Abiturients.Authorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Abiturients"
+        mc:Ignorable="d"
+        Title="Authorization" Height="240" Width="480" WindowStyle="ToolWindow">
+    <Grid x:Name= "MainRoot" Background="Gray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55*" />
+            <RowDefinition Height="55*" />
+            <RowDefinition Height="55*" />
+            <RowDefinition Height="52*" />
+            <RowDefinition Height="3*"/>
+
+        </Grid.RowDefinitions>
+        <Button Content="Вхід" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="196" Click="Button_Click" Grid.Row="3" Background="#FF5EAC61" FontWeight="Bold" FontSize="20" IsDefault="True"/>
+        <Label Content="Авторизація" HorizontalAlignment="Center" Height="55" VerticalAlignment="Center" Width="480" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="36" FontWeight="Bold" Background="#FF47804A"/>
+        <TextBox x:Name="login_box" HorizontalAlignment="Left" Height="35" Margin="227,0,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="232" RenderTransformOrigin="0.503,0.525" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <PasswordBox x:Name="password_box" HorizontalAlignment="Left" Height="35" Margin="227,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="232" RenderTransformOrigin="0.503,0.525" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="88,0,0,0" Grid.Row="1" Text="Логін" TextWrapping="Wrap" VerticalAlignment="Center" Width="46" FontFamily="Arial" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="83,12,0,0" Grid.Row="2" Text="Пароль" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" FontFamily="Arial" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.158"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+    </Grid>
+</Window>
