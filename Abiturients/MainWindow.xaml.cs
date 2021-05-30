@@ -160,7 +160,7 @@ namespace Abiturients
             {
                 ComboBoxItem item = (ComboBoxItem)SelectData.SelectedItem;
                 SelectDataWindow selectDataWindow = new SelectDataWindow(item.Content.ToString());
-                selectDataWindow.Show();
+                selectDataWindow.ShowDialog();
                 SelectData.SelectedItem = null;
                 if (selected.Count != 0)
                 {
