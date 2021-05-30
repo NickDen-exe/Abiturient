@@ -49,17 +49,17 @@ namespace Abiturients
 
         private void MainForm_Loaded(object sender, RoutedEventArgs e)
         {
-            //this.Hide();
-            //authorization.ShowDialog();
-            //if (authorization.loged_in == true)
-            //{
-            //    this.Show();
+            this.Hide();
+            authorization.ShowDialog();
+            if (authorization.loged_in == true)
+            {
+                this.Show();
                 LoadData();
-            //}
-            //else
-            //{
-            //    this.Close();
-            //}
+            }
+            else
+            {
+                this.Close();
+            }
         }
 
         private void LoadData()

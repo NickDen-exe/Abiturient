@@ -54,7 +54,6 @@ C:\Users\lenovo\Documents\GitHub\Abiturient\Abiturients\obj\Debug\SelectDataWind
 C:\Users\lenovo\Documents\GitHub\Abiturient\Abiturients\obj\Debug\App.g.cs
 C:\Users\lenovo\Documents\GitHub\Abiturient\Abiturients\obj\Debug\Abiturients_MarkupCompile.cache
 C:\Users\lenovo\Documents\GitHub\Abiturient\Abiturients\obj\Debug\Abiturients_MarkupCompile.lref
-C:\Users\lenovo\Documents\GitHub\Abiturient\Abiturients\obj\Debug\App.baml
 C:\Users\lenovo\Documents\GitHub\Abiturient\Abiturients\obj\Debug\Authorization.baml
 C:\Users\lenovo\Documents\GitHub\Abiturient\Abiturients\obj\Debug\MainWindow.baml
 C:\Users\lenovo\Documents\GitHub\Abiturient\Abiturients\obj\Debug\SelectDataWindow.baml
