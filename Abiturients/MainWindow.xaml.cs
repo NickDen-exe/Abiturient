@@ -47,7 +47,7 @@ namespace Abiturients
             MessageBox.Show(Message, Header, MessageBoxButton.OK, MessageBoxImage.Warning);
         }
 
-        private void MainForm_Loaded(object sender, RoutedEventArgs e)
+        public void MainForm_Loaded(object sender, RoutedEventArgs e)
         {
             this.Hide();
             authorization.ShowDialog();
@@ -210,13 +210,13 @@ namespace Abiturients
             }
         }
 
-        private void AddWeather()
+        private void AddStudent()
         {
             try
             {
-                Student weather = new Student(Name.Text, new int[3] { Convert.ToInt32(Mark1.Text), Convert.ToInt32(Mark2.Text), Convert.ToInt32(Mark3.Text) }, School.Text);
+                Student student = new Student(Name.Text, new int[3] { Convert.ToInt32(Mark1.Text), Convert.ToInt32(Mark2.Text), Convert.ToInt32(Mark3.Text) }, School.Text);
 
-                int result = dataAccess.AddToBase(weather);
+                int result = dataAccess.AddToBase(student);
                 if (result == 1)
                 {
                     LoadData();
@@ -248,13 +248,13 @@ namespace Abiturients
                 }
                 if (DataTable.SelectedItem == null)
                 {
-                    AddWeather();
+                    AddStudent();
                 }
                 else
                 {
                     if (DeleteAbiturient(selectedStudent))
                     {
-                        AddWeather();
+                        AddStudent();
                     }
                     else
                     {
