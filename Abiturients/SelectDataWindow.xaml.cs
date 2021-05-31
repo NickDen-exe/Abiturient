@@ -46,7 +46,7 @@ namespace Abiturients
                     throw new Exception("Такі абітурієнти не знайдені");
                 }
                 MainWindow.selected = students;
-                MessageBox.Show("Пошук виконано успішно)0)");
+                MessageBox.Show("Пошук виконано успішно");
 
                 this.Close();
             }

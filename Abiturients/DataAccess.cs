@@ -14,7 +14,7 @@ namespace Abiturients
 
         public DataAccess()
         {
-            string connStr = "server=localhost; user=admin; password=; database=abiturient; port=3306;";
+            string connStr = "server=localhost; user=admin; password=; database=abiturients; port=3306;";
             conn = new MySqlConnection(connStr);
             command = new MySqlCommand();
             command.Connection = conn;

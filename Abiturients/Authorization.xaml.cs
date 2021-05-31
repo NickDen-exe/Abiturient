@@ -35,7 +35,7 @@ namespace Abiturients
             else
             {
 
-                MessageBox.Show("Лошара, ты куда звонишь блять");
+                MessageBox.Show("Помилка, дані для входу не вірні");
             }
         }
     }
