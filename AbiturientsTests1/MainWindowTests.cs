@@ -17,12 +17,11 @@ namespace Abiturients.Tests
         {
             List<Student> expected = new List<Student>()
             {
-                new Student( "Денисенко Микита Сергійович", new int[3]{ 4, 5, 3}, "21"),
-                new Student("Веретельніков Микола Вадимович", new int[3] { 2, 2, 3 }, "19")
+                new Student( "Денисенко Микита Сергійович", new int[3]{ 4, 5, 3}, "21")
             };
 
             DataAccess dataAccess = new DataAccess();
-            List<Student> actual = dataAccess.SelectData("");
+            List<Student> actual = dataAccess.SelectData("8");
 
             for (int i = 0; i < expected.Count; i++)
             {
@@ -39,12 +38,11 @@ namespace Abiturients.Tests
         {
             List<Student> expected = new List<Student>()
             {
-                new Student( "Денисенко Микита Сергійович", new int[3]{ 4, 5, 3}, "21"),
                 new Student("Веретельніков Микола Вадимович", new int[3] { 2, 2, 3 }, "19")
             };
 
             DataAccess dataAccess = new DataAccess();
-            List<Student> actual = dataAccess.SelectData("", "");
+            List<Student> actual = dataAccess.SelectData("7", "19");
 
             for (int i = 0; i < expected.Count; i++)
             {

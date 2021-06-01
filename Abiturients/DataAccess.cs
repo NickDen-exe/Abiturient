@@ -71,25 +71,17 @@ namespace Abiturients
 
         public List<Student> SelectData(string mark, string school = "")
         {
+            string command = String.Empty;
             if(school == "")
             {
-                command.CommandText = $"SELECT * FROM abiturients WHERE (mark1 + mark2 + mark3) >= {mark}";
+                command = $"SELECT * FROM abiturients WHERE (mark1 + mark2 + mark3) >= {mark}";
             }
             else
             {
-                command.CommandText = $"SELECT * FROM abiturients WHERE (mark1 + mark2 + mark3) >= {mark} AND school = '{school}'";
+                command = $"SELECT * FROM abiturients WHERE (mark1 + mark2 + mark3) >= {mark} AND school = '{school}'";
             }
-
-            List<Student> result = new List<Student>();
-
-            reader = command.ExecuteReader();
-            while(reader.Read())
-            {
-                result.Add(new Student(reader.GetString(0), new int[3] { reader.GetInt32(1), reader.GetInt32(2), reader.GetInt32(3) }, reader.GetString(4)));
-            }
-            reader.Close();
-
-            return result;
+            
+            return GetList(command);
         }
 
         public int AddToBase(Student abiturient)

@@ -22,13 +22,13 @@ namespace Abiturients
     {
         public static List<Student> selected = new List<Student>();
         
-        List<string> textNames = new List<string>()
+        Dictionary<string, string> textNames = new Dictionary<string, string>()
         {
-            "ПІБ",
-            "Перша оцінка",
-            "Друга оцінка",
-            "Третя оцінка",
-            "Школа"
+            ["Name"] = "ПІБ",
+            ["Mark1"] = "Перша оцінка",
+            ["Mark2"] = "Друга оцінка",
+            ["Mark3"] = "Третя оцінка",
+            ["School"] = "Школа"
         };
 
         static public DataAccess dataAccess = new DataAccess();
@@ -128,24 +128,7 @@ namespace Abiturients
             TextBox textBox = (TextBox)sender;
             if(String.IsNullOrWhiteSpace(textBox.Text))
             {
-                switch (textBox.Name)
-                {
-                    case "Name":
-                        textBox.Text = textNames[0];
-                        break;
-                    case "Mark1":
-                        textBox.Text = textNames[1];
-                        break;
-                    case "Mark2":
-                        textBox.Text = textNames[2];
-                        break;
-                    case "Mark3":
-                        textBox.Text = textNames[3];
-                        break;
-                    case "School":
-                        textBox.Text = textNames[4];
-                        break;
-                }
+                textBox.Text = textNames[textBox.Name];
                 textBox.Opacity = 0.7;
             }
             else
@@ -317,24 +300,7 @@ namespace Abiturients
             TextBox textBox = (TextBox)sender;
             string text = String.Empty;
 
-            switch (textBox.Name)
-            {
-                case "Name":
-                    text = textNames[0];
-                    break;
-                case "Mark1":
-                    text = textNames[1];
-                    break;
-                case "Mark2":
-                    text = textNames[2];
-                    break;
-                case "Mark3":
-                    text = textNames[3];
-                    break;
-                case "School":
-                    text = textNames[4];
-                    break;
-            }
+            text = textNames[textBox.Name];
 
             if (text == textBox.Text)
             {
